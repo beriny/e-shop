@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/test-vue/static/vue.js"></script>
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="/test-vue/vue-6-keyword/style.css">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="ui segment">header</div>
+        <div class="ui inverted green segment">
+            <h1>键盘事件keyword</h1>
+            <label for="name">姓名: {{ name }}</label><br />
+            <input type="text" name="name" @keyup.alt="logName"><br />
+            <label for="name">年龄: {{ age }}</label><br />
+            <input type="text" name="age" @keyup.alt="logAge">
+        </div>
+        <div class="ui segment">footer</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

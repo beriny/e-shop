@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/test-vue/static/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="/test-vue/vue-2-methods/style.css">
+    <title>使用Vue</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="ui inverted red container segment">
+            <h2>header</h2>
+        </div>
+        <div class="ui inverted green container segment">
+            <h2>content</h2>
+            <h1>使用Vue来学习methods方法</h1>
+            <h2>{{ greet('afternoon') }}</h2>
+            <p>这里传入字符串加引号</p>
+            <p>{{ msg }}</p>
+            <p>name: {{ name }}</p>
+            <p>jobs: {{ jobs }}</p>
+        </div>
+        <div class="ui inverted blue container segment">
+            <h2>footer</h2>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

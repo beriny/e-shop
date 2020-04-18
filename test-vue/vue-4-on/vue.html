@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/test-vue/static/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="/test-vue/vue-4-on/style.css">
+    <title>Vue-学习onclick点击事件</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="ui inverted red segment">
+            <h1>header</h1>
+        </div>
+
+        <div class="ui inverted green segment">
+            <h1>content</h1>
+            <h3>学习onclick点击事件</h3>
+            <p>Events</p>
+            <button @click.once="add(1)">涨一岁</button>
+            <button @dblclick="add(10)">涨十岁</button>
+            <button @click="subtract(1)">减一岁</button>
+            <button @dblclick="subtract(10)">减十岁</button>
+            <p>My age is {{ age }}</p>
+            <div id="canvas" @mousemove="updateXY">
+                <h5 class="ui inverted yellow segment">{{ x }}, {{ y }}</h5>
+            </div>
+        </div>
+
+        <div class="ui inverted blue segment">
+            <h1>footer</h1>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

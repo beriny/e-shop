@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/test-vue/static/vue.js"></script>
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="/test-vue/vue-9-computer/style.css">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="ui inverted red segment">header</div>
+        <div class="ui inverted green segment">
+            <h1>Computed 计算属性</h1>
+            <button @click="a++">Add to A</button>
+            <button @click="b++">Add to B</button>
+            <p>A-{{a}}</p>
+            <p>B-{{b}}</p>
+            <p>Age + A = {{addToA}}</p>
+            <p>Age + B = {{addToB}}</p>
+            <h3>≈ß</h3>
+
+        </div>
+        <div class="ui inverted blue segment">footer</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

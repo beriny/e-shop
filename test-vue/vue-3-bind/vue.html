@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/test-vue/static/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="/test-vue/vue-3-bind/style.css">
+    <title>Vue-学习v-bind</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="ui inverted red container segment">
+            <h1>header</h1>
+        </div>
+
+        <div class="ui inverted green container segment">
+            <h1>content</h1>
+            <p>name: {{ name }}</p>
+            <p>job: {{ job }}</p>
+            <p>{{ greet() }}</p>
+            <h3>v-bind绑定属性</h3>
+            <p><a v-bind:href="website">我的网站</a></p>
+            <input type="text" v-bind:value="job">
+            <h3>v-html绑定一个标签</h3>
+            <p v-html="websiteTag"></p>
+        </div>
+
+        <div class=" ui inverted blue container segment">
+            <h1>footer</h1>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

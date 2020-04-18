@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/test-vue/static/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="/test-vue/vue-5-event/style.css">
+    <title>Vue-学习事件修饰符</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="ui inverted red segment">header</div>
+        <div class="ui inverted green segment">
+            content
+            <h1>学习事件修饰符</h1>
+            <ul>
+                <li>.stop停止</li>
+                <li>.once一次</li>
+                <li>@submit.prevent不再重复提交</li>
+                <li>@click.stop.prevent修饰符可以串联</li>
+                <li>.self元素本身时触发</li>
+                <li>.capture事件监听</li>
+            </ul>
+            <h2>{{ name }}</h2>
+            <h2>阻止事件冒泡方法stopPropagation()</h2>
+            <div id="canvas" @mousemove="updateXY">
+                {{ x }}, {{ y }} -- <span @mousemove.stop="stopMoving">Stop Moving</span>
+            </div>
+            <a @click.prevent="alert" href="http://www.alibaba.com">Next command</a>
+        </div>
+
+        <div class="ui inverted blue segment">footer</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

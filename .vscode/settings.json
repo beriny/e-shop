@@ -1,0 +1,14 @@
+{
+    "editor.fontSize": 16,
+    "[html]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    "workbench.statusBar.visible": true,
+    "[cpp]": {
+        "editor.wordBasedSuggestions": true
+    },
+    "[less]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    "terminal.integrated.fontSize": 15,
+}

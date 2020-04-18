@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/test-vue/static/vue.js"></script>
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="/test-vue/vue-10-bind:style/style.css">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="ui inverted red segment">header</div>
+        <div class="ui inverted green segment">
+            <h1>动态 Css Class</h1>
+            <button @click="changeColor = !changeColor" v-bind:class="{changeColor:changeColor}">click</button>
+        </div>
+        <div class="ui inverted blue segment">footer</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/test-vue/static/vue.js"></script>
+    <link rel="stylesheet" href="/test-vue/static/semantic.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.bootcss.com/semantic-ui/2.4.1/semantic.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.18.1/axios.js"></script>
+    <title>Vue页面Moonle</title>
+</head>
+
+<body>
+    <div>
+        <div class="ui inverted yellow segment" id="app">
+            <div class="ui inverted vertical orange padded segment">
+                <header>
+                    <ul>
+                        <todo-items v-for="message in list" v-bind:message='message'></todo-items>
+                    </ul>
+                </header>
+                <div class="ui segment container inversted pink">
+                    <label>姓名：{{ this.name }}</label>
+                    <input type="text" v-model="name">
+                    <label>年龄：{{ this.age }}</label>
+                    <input type="text" v-model="age">
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="text" v-model="info" class="ui inverted gray segment">
+                <button class="ui very padded vertical blue button" @click="handleClick">添加</button>
+                <div class="ui inverted green segment">
+
+                    <ul>
+                        <li v-for="item in list">{{ item }}</li>
+                    </ul>
+                    <button @click="clearClick">清空</button>
+                </div>
+            </div>
+
+            <div>
+                <footer class="ui inverted pink segment" style="text-align: center;">
+                    @CopyLeft--Moonle中国人自己的Google
+                </footer>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>

@@ -11,4 +11,7 @@
         "editor.suggest.insertMode": "replace"
     },
     "terminal.integrated.fontSize": 15,
+    "workbench.colorTheme": "Atom One Light",
+    "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
 }

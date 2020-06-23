@@ -1,7 +1,7 @@
 var app = new Vue({
     el: "#app",
     data: {
-        name: "qiong",
+        name: "琼",
         x: 0,
         y: 0,
     },

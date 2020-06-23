@@ -1,7 +1,19 @@
 {
+    "cloudcode.yaml.format.bracketSpacing": true,
     "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.rules": [80, 120],
+    "editor.tabSize": 4,
+    "editor.selectionHighlight": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.autoIndent": "advanced",
+    "editor.fontFamily": "Hasklig, Menlo, Monaco, 'Courier New', monospace",
+    "editor.snippetSuggestions": "inline",
+    "editor.wordWrap": "on",
+    "git.ignoreLimitWarning": true,
     "[html]": {
-        "editor.suggest.insertMode": "replace"
+        "editor.suggest.insertMode": "replace",
+        "editor.wordWrapColumn": 80
     },
     "workbench.statusBar.visible": true,
     "[cpp]": {
@@ -10,8 +22,34 @@
     "[less]": {
         "editor.suggest.insertMode": "replace"
     },
-    "terminal.integrated.fontSize": 15,
-    "workbench.colorTheme": "Atom One Light",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.cursorStyle": "line",
+    "workbench.colorTheme": "Atom One Half Light",
     "workbench.preferredDarkColorTheme": "Atom One Dark",
     "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "onFocusChange",
+    "prettier.semi": true,
+    "prettier.endOfLine": "auto",
+    "prettier.bracketSpacing": true,
+    "prettier.eslintIntegration": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force-expand-multiline"
+        },
+        "prettyhtml": {
+            "printWidth": 100,
+            "singleQuote": false,
+            "wrapAttributes": false,
+            "sortAttributes": false
+        }
+    },
+    "npm.enableRunFromFolder": true
+
 }

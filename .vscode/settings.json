@@ -50,6 +50,9 @@
             "sortAttributes": false
         }
     },
-    "npm.enableRunFromFolder": true
+    "npm.enableRunFromFolder": true,
+    "workbench.preferredHighContrastColorTheme": "Atom One Dark",
+    "workbench.preferredLightColorTheme": "Atom One Light",
+    "editor.renameOnType": true
 
 }

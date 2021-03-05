@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/test-vue/static/vue.js"></script>
-    <link rel="stylesheet" href="/test-vue/static/semantic.css">
-    <link rel="stylesheet" href="/test-vue/vue-7-model/style.css">
+    <link rel="stylesheet" href="/test-vue/static/semantic.css" />
+    <link rel="stylesheet" href="/test-vue/vue-7-model/style.css" />
     <title>Vue.js</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="app">
-        <div class="ui inverted red segment">Vue-学习v-model双向数据绑定</div>
-        <div class="ui inverted green segment">
-            <h1>双向数据绑定 / input / select / textarea / </h1>
-            <h2>{{msg}}</h2>
-            <label for="name">姓名：</label>
-            <input type="text" ref="name" @keyup="logName" placeholder="请输入姓名">
-            <span>{{name}}</span>
-            <label for="age">年龄：</label>
-            <input type="text" ref="age" @keyup="logAge" placeholder="请输入年龄">
-            <span>{{age}}</span>
-        </div>
-        <div class="ui inverted blue segment">@©CopyLeft Moonle</div>
+      <div class="ui inverted red segment">Vue-学习v-model双向数据绑定</div>
+      <div class="ui inverted green segment">
+        <h1>双向数据绑定 / input / select / textarea /</h1>
+        <h2>{{msg}}</h2>
+        <label for="name">姓名：</label>
+        <input
+          type="text"
+          ref="name"
+          @keyup="logName"
+          placeholder="请输入姓名"
+        />
+        <span>{{name}}</span>
+        <label for="age">年龄：</label>
+        <input type="text" ref="age" @keyup="logAge" placeholder="请输入年龄" />
+        <span>{{age}}</span>
+      </div>
+      <div class="ui inverted blue segment">@©CopyLeft Moonle</div>
     </div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

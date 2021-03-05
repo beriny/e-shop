@@ -1,6 +1,6 @@
 {
     "cloudcode.yaml.format.bracketSpacing": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.formatOnSave": true,
     "editor.rules": [80, 120],
     "editor.tabSize": 4,
@@ -24,7 +24,7 @@
     },
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.cursorStyle": "line",
-    "workbench.colorTheme": "Atom One Half Light",
+    "workbench.colorTheme": "Atom One Dark",
     "workbench.preferredDarkColorTheme": "Atom One Dark",
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "onFocusChange",
